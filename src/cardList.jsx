@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "./cards";
 
-const CardList=( {roboto} )=>{
+const CardList=( {robotic} )=>{
     return(
         <>
         {
-            roboto.map((user)=>{
+            robotic.map((user)=>{
                 return (
                     <Card 
                     key={user.id}
