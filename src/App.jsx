@@ -21,11 +21,17 @@ class App extends Component {
             return robot.realname.toLowerCase().includes(this.state.searchfield.toLowerCase())
         })
         return(
-            <div className="tc ">
-                <h1>Robo-Friends Here</h1>
-                <SearchBox searcher={this.finder}/>
-                <CardList robotic={filterRobo}/> 
-            </div>
+                <div class="header ">
+                    <div className="tc flex flex-wrap flex-column items-center justify-center">
+                        <div className="f1">
+                            <h1>Robo-Friends Here</h1>
+                        </div> 
+                        <SearchBox searcher={this.finder}/>
+                    </div>
+                    <div className="flex flex-wrap justify-center">
+                        <CardList robotic={filterRobo}/> 
+                    </div>
+                </div>
         )
     }
 }
