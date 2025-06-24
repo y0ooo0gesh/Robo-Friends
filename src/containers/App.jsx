@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardList from "../components/cardList.jsx";
 import SearchBox from "../components/searchBox.jsx";
 import Scroll from "../components/scroll.jsx";
+import ErrorBoundary from "../components/ErrorBoundary.jsx";
 
 class App extends Component {
     constructor(){
@@ -37,7 +38,9 @@ componentDidMount(){
             </div>
             <Scroll>
                 <div className="flex flex-wrap justify-center">
-                    <CardList robotic={filterRobo}/> 
+                    <ErrorBoundary>
+                        <CardList robotic={filterRobo}/> 
+                    </ErrorBoundary>
                 </div>
             </Scroll>
         </>)
