@@ -1,12 +1,13 @@
-# React + Vite
+# Robo-Friend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a minimal App that holds the Cards of your Robot buddies (Pre-defined) in which you can search via their real name and view their username
 
-Currently, two official plugins are available:
+Currently -23rd June, 2025 : User Name viewing is not available
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tools used:-
+* React
+* Vite
 
-## Expanding the ESLint configuration
+## Font used can be found [here](https://www.cufonfonts.com/site/font-detail?slug=zatura)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Feel free to fork and provide any suggestions
