@@ -10,8 +10,9 @@ const CardList=( {robotic} )=>{
                     <Card 
                     key={user.id}
                     id={user.id} 
-                    name={user.realname} 
+                    name={user.name} 
                     email={user.email} 
+                    // address={user.address.city} 
                     />);       
             })
         }

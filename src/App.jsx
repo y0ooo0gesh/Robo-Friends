@@ -1,27 +1,34 @@
 import React, { Component } from "react";
 import CardList from "./cardList";
-import { robots } from './robot.js';
 import SearchBox from "./searchBox.jsx";
 
 class App extends Component {
     constructor(){
         super()
         this.state = {
-            robotipo: robots,
+            robotipo: [],
             searchfield: ""
         }
     }
 
+componentDidMount(){
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(Response=> Response.json())
+        .then(users => this.setState({ robotipo: users }))
+}    
+
     finder = (event) => {
         this.setState({ searchfield: event.target.value })
     }
-
     render(){
         const filterRobo = this.state.robotipo.filter(robot =>{
-            return robot.realname.toLowerCase().includes(this.state.searchfield.toLowerCase())
+            return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
         })
+    if (this.state.robotipo.length === 0){
+        return <h1 className="ma0 pa2">Loading Please Wait</h1>;
+    } else {
         return(
-                <div class="header ">
+                <>
                     <div className="tc flex flex-wrap flex-column items-center justify-center">
                         <div className="f1">
                             <h1>Robo-Friends Here</h1>
@@ -31,8 +38,9 @@ class App extends Component {
                     <div className="flex flex-wrap justify-center">
                         <CardList robotic={filterRobo}/> 
                     </div>
-                </div>
+                </>
         )
+        }
     }
 }
 
