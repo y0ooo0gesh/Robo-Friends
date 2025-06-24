@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CardList from "./cardList";
 import SearchBox from "./searchBox.jsx";
+import Scroll from "./scroll";
 
 class App extends Component {
     constructor(){
@@ -35,9 +36,11 @@ componentDidMount(){
                         </div> 
                         <SearchBox searcher={this.finder}/>
                     </div>
-                    <div className="flex flex-wrap justify-center">
-                        <CardList robotic={filterRobo}/> 
-                    </div>
+                    <Scroll>
+                        <div className="flex flex-wrap justify-center">
+                            <CardList robotic={filterRobo}/> 
+                        </div>
+                    </Scroll>
                 </>
         )
         }
