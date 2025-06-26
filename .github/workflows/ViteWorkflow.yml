@@ -1,5 +1,5 @@
 name: Deploying static content to Git Hub Pages
-#Trying whether workflow works or not
+#Note while making a workflow from Github page must remember to add .yml in extension
 on:
   push:
     branches: ['main']

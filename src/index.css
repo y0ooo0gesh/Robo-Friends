@@ -9,7 +9,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* @font-face {
+@font-face {
   font-family: 'Zatura Regular';
   font-style: normal;
   font-weight: normal;
@@ -18,7 +18,7 @@
 h1{
   font-family: 'Zatura Regular';
   color: #9EEBCF;
-} */
+}
 body {
   margin: 0;
   min-width: 100%;
