@@ -4,7 +4,7 @@ const SearchBox = ( {searcher} ) => {
     return(
         <div className=" pa2 ">
             <input 
-                className="pa3 ma4 ph4 tc w-100 br-pill grow  bw1 ba b--blue bg-light-green"
+                className="pa3 ma4 ph4 tc w-auto br-pill bw1 ba b--blue bg-light-green"
                 type="search" 
                 placeholder="Search Your ROBO-Friends"
                 onChange={searcher}
